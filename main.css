@@ -10,7 +10,6 @@ body{
   max-width: 80rem;
   border: 1px solid #B9DFDC; 
   margin: 5px auto;
-
 }
 .nav{
 display: flex;
@@ -63,12 +62,7 @@ a {
   text-transform: uppercase;
   font-size: 16px;
   height: 75px;
-width: 100%;
-display: flex;
-justify-content: space-around;
-align-items: end;
-height: 75px;
-
+  
 background:linear-gradient(#B9DFDC, #ABD8D5);
 border-bottom: 1px solid  #1A3836;
 }
@@ -114,7 +108,6 @@ z-index:4;
 .line img {
   width:2rem;
 }
-
 
 .intro {
   max-width:100%;
@@ -164,7 +157,7 @@ z-index:4;
 }
 .card {
   max-width:90rem;
-  height:45rem;
+  height:65rem;
   background:linear-gradient(#B9DFDC, #ABD8D5);
   padding:2rem;
   display:grid;
@@ -172,10 +165,11 @@ z-index:4;
   grid-template-rows:repeat(3,1fr);
   grid-column-gap: 2rem;
   grid-template-areas:
-  "1 2 3"
-  "4 5 6";
+    "1 2 3"
+    "4 5 6"
+    "7 8 9";
 }
-    
+
 .card1 {
   max-width:15rem;
   height: 10rem;
@@ -192,15 +186,12 @@ z-index:4;
   object-fit:cover;
   margin-bottom:none;
   margin-top:35px;
-  
-
 }
 .card2 {
   max-width:17rem;
   height: 11rem;
   margin-left:2.3rem;
   background-color: #C7E5E3;
-  /* border-radius:1.2rem; */
  border-bottom-left-radius:45%;
  border-bottom-right-radius:45%;
   display:flex;
@@ -211,8 +202,42 @@ z-index:4;
   display:block;
   justify-content:center;
   text-align:center;
-  
+}
+.card3{
+  max-width: 15rem;
+  height:10rem;
+  margin-left: 2.4rem;
+  padding: 13px;
+  background-color: #C7E5E3;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1A3836;
+  object-fit: cover;
+  margin-bottom: none;
+  margin-top: 40px;
+}
+.card4{
+  max-width:17rem;
+  height: 11rem;
+  margin-left:2.3rem;
+  background-color: #C7E5E3;
+ border-bottom-left-radius:45%;
+ border-bottom-right-radius:45%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color: #1A3836;
+  font-size:10px;;
+  display:block;
+  justify-content:center;
+  text-align:center;
 
+}
+#x{
+  grid-area: 7;
 }
 h3 {
     font-size:12px; 
@@ -229,7 +254,7 @@ width:2rem;
  }
 #1 {
   grid-area:1;
-
+margin:0;
 }
 
 #2 {
