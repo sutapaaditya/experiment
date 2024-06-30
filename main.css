@@ -132,7 +132,7 @@ z-index:4;
 /* } */
 
 .intro {
-  width:100%;
+  max-width:100%;
   height:40rem;
   /* background-color: #D5ECEA; */
   background: linear-gradient(
@@ -165,28 +165,70 @@ z-index:4;
   display:grid;
   grid-template-columns:repeat(3, 1fr);
   grid-template-rows:repeat(3,1fr);
-  gap:1.6rem;
+  grid-column-gap:2rem;
+  /* grid-row-gap:0.1rem; */
   grid-template-areas:
   "1 2 3"
   "4 5 6";
 }
     
 .card1 {
-  max-width:20rem;
-  height: 20rem;
+  max-width:15rem;
+  height: 10rem;
   margin-left:2.3rem;
+  padding:13px;
   background-color: #C7E5E3;
-  border-radius:1.2rem;
+  /* border-radius:1.2rem; */
+ border-top-left-radius:45%;
+ border-top-right-radius:45%;
   display:flex;
   justify-content:center;
   align-items:center;
   color: #1A3836;
+  object-fit:cover;
+  margin-bottom:none;
+  margin-top:35px;
   
 
 }
+.card2 {
+  max-width:15rem;
+  height: 11rem;
+  margin-left:2.3rem;
+  background-color: #C7E5E3;
+  /* border-radius:1.2rem; */
+ border-bottom-left-radius:45%;
+ border-bottom-right-radius:45%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color: #1A3836;
+  font-size:10px;;
+  display:block;
+  justify-content:center;
+  text-align:center;
+  
+
+}
+h3 {
+    font-size:12px; 
+  }
+.card img {
+  width:100%;
+  height:10rem;
+  box-sizing:border-box;
+  border-top-right-radius:45%;
+  border-top-left-radius:45%;
+ }  
+hr {
+width:2rem;    
+ }
 #1 {
   grid-area:1;
+
+
 }
+
 #2 {
 grid-area:2;
 }
@@ -198,6 +240,10 @@ grid-area:4;
 }
 #5 {
 grid-area:5;
+}
+
+#6 {
+grid-area:6;
 }
 .card1:hover{
 background-color:#81C5C0;
