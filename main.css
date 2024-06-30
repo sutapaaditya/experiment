@@ -6,19 +6,23 @@
 /* } */
 body{
   font-family: "Poppins", sans-serif; 
- font-weight: 700; 
+  font-weight: 700; 
   background-color: #E3F2F1;
 }
 .container{
   max-width: 90%;
   margin: 0 auto;
+  max-width: 80rem;
+  border: 1px solid #B9DFDC; 
+  margin: 5px auto;
+
 }
 .nav{
-  display: flex;
-  justify-content: space-between;
-  padding: 60px 0;
-  width:100%;
-  background-color: #D5ECEA;
+display: flex;
+justify-content: space-between;
+padding: 60px 0;
+width:100%;
+background-color: #D5ECEA;
 }
 .nav .right img{
   width: 24px;
@@ -31,8 +35,8 @@ body{
   margin-top: 8px;
 }
 .nav .left{
- font-size: 20px; 
- display: flex; 
+  font-size: 20px; 
+  display: flex; 
   justify-content: space-evenly;
   align-items: center;
   color: #1A3836;
@@ -41,7 +45,7 @@ body{
   font-weight: 700;
 }
 .nav .right{
- display: flex; 
+  display: flex; 
   justify-content: space-between;
   align-items: center;
   padding: 6px ;
@@ -64,8 +68,14 @@ a {
   text-transform: uppercase;
   font-size: 16px;
   height: 75px;
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: end;
+height: 75px;
+
 background:linear-gradient(#B9DFDC, #ABD8D5);
-  border-bottom: 1px solid  #1A3836;
+border-bottom: 1px solid  #1A3836;
 }
 .login {
   width:70px;
@@ -76,9 +86,18 @@ background:linear-gradient(#B9DFDC, #ABD8D5);
   justify-content: center;
  background-color: #0066ff; 
   align-items: center;
+width:70px;
+border: 1px solid white;
+height:40px;
+border-radius: 16px;
+display: flex;
+justify-content: center;
+background-color: #0066ff; 
+align-items: center;
+
 }
 #log{
- background-color: #0066ff; 
+  background-color: #0066ff; 
   color: #E3F2F1;
 }
 .carousel {
@@ -88,5 +107,144 @@ background:linear-gradient(#B9DFDC, #ABD8D5);
   width:100%;
 }
 .fade-out{
-  transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out
+.main {
+width: 100%;
+display:flex;
+justify-content:center;
+}
+.carousel {
+  margin-top: 12px;
+  max-width:100rem;
+  height:35rem;
+
+}
+.carousel img {
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+.line {
+/* border: 3px solid blue; */
+display:flex;
+justify-content:space-around;
+background:linear-gradient(#B9DFDC, #ABD8D5);
+border-top: 0.1rem solid #8FCCC8 ;
+border-bottom: 0.1rem solid #8FCCC8 ;
+box-shadow:10px 30px 110px 10px black /* rgba(0, 0, 0, 0.1) */;
+z-index:4;
+}
+
+.line img {
+  width:2rem;
+}
+/* .line a { */
+/*   width: 34px; */
+/*   border: 2px solid red; */
+/* } */
+/* .line a:hover { */
+/*   background:red; */
+/* } */
+
+.intro {
+  width:100%;
+  height:40rem;
+  /* background-color: #D5ECEA; */
+  background: linear-gradient(
+  0deg,
+  
+  rgb(171, 216, 211)0%,
+  rgb(115, 191, 184)76%,
+  rgb(39, 84, 79)100%
+  );
+  display:flex;
+  /* display:block; */
+  justify-content:center;
+  padding: 10px;
+  z-index:1;
+}
+.layer {
+  width:60rem;
+  height: 30rem;
+  background:linear-gradient(#B9DFDC, #ABD8D5);
+  margin: 8px;
+  padding: 6px;
+  border-radius:0.5rem;
+}
+
+.card {
+  max-width:90rem;
+  height:45rem;
+  background:linear-gradient(#B9DFDC, #ABD8D5);
+  padding:2rem;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-rows:repeat(3,1fr);
+  gap:1.6rem;
+  grid-template-areas:
+  "1 2 3"
+  "4 5 6";
+}
+    
+.card1 {
+  max-width:20rem;
+  height: 20rem;
+  margin-left:2.3rem;
+  background-color: #C7E5E3;
+  border-radius:1.2rem;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color: #1A3836;
+  
+
+}
+#1 {
+  grid-area:1;
+}
+#2 {
+grid-area:2;
+}
+#3 {
+grid-area:3;
+}
+#4 {
+grid-area:4;
+}
+#5 {
+grid-area:5;
+}
+.card1:hover{
+background-color:#81C5C0;
+color:white;
+}
+
+.footer {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+background-color:#81C5C0;
+border-top: 1px solid #65B8B3;
+}
+
+.address {
+  display:grid;
+  gap: 0.2rem;
+  grid-template-columns: 2rem;
+  grid-template-rows: repeat(3, 2rem);
+ width:80px;
+margin-left:2rem;
+  
+}
+.address img {
+  width:24px;
+}
+.social_media {
+  display:block;
+  margin: 1rem;
+}
+.social_media img {
+  width:24px;
+
 }
